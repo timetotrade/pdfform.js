@@ -1,6 +1,8 @@
+# this has been broken
 default: help
 
 help:
+  @echo 'The original make file is no longer supported'
 	@echo 'make targets:'
 	@echo '  deps          Download and install all dependencies (for compiling / testing / CLI operation)'
 	@echo '  test          Run tests'

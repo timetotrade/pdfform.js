@@ -1,5 +1,8 @@
 # pdfform.js
 
+# This code only works on browsers NOT node servers
+## as the node implementation relied on libraries that broke broswer functionality
+
 Fill out PDF forms in pure JavaScript, both in the browser or on the server.
 
 pdfform.js can function with a slightly customized version of [pdf.js](https://github.com/mozilla/pdf.js). However, due to the size and scope of PDF.js (1600KB+), by default a built-in PDF library (called minipdf) is used.

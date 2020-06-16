@@ -1,4 +1,4 @@
-# pdfform.js
+# @timetotrade/pdfform.js
 
 # This code only works on browsers NOT node servers
 ## as the node implementation relied on libraries that broke broswer functionality

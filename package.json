@@ -1,5 +1,5 @@
 {
-  "name": "@timetotrade/pdfform",
+  "name": "@timetotrade/pdfform.js",
   "author": "Philipp Hagemeister <phihag@phihag.de>",
   "contributors": ["Nik Caplen <nik@sensatus.com>"],
   "description": "Fill out PDF forms in pure JavaScript",

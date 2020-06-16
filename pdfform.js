@@ -1,15 +1,6 @@
 'use strict';
 
-if (typeof window == 'undefined') {
-	// node.js, load compat libraries
-	var DOMParser = require('xmldom').DOMParser;
-	var XMLSerializer = require('xmldom').XMLSerializer;
-	var text_encoding = require('text-encoding');
-	var TextEncoder = text_encoding.TextEncoder;
-	var TextDecoder = text_encoding.TextDecoder;
-
-	var pako = require('pako');
-}
+var pako = require('pako');
 
 function pdfform(minipdf_lib) {
 
@@ -373,7 +364,7 @@ function modify_xfa(doc, objects, out, index, callback) {
 	var prev_str = (new TextDecoder('utf-8')).decode(bs);
 
 	var str = callback(prev_str);
- 
+
 	var out_bs = (new TextEncoder('utf-8').encode(str));
 	var out_node = minipdf_lib.newStream(section_node.dict.map, out_bs);
 	assert(minipdf_lib.isStream(out_node));
